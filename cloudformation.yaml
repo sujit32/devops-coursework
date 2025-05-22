@@ -101,8 +101,7 @@ Resources:
       # Configure storage
       BlockDeviceMappings:
         - DeviceName: /dev/sda1
-        # BlockDeviceMapping-DeviceName needs to be match with AMI specifications.
-        # aws ec2 describe-images --region us-east-1 --image-ids ami-084568db4383264d4
+    
           Ebs:
             VolumeType: gp2
             VolumeSize: 20 # Disk Size in GB
